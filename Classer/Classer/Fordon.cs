@@ -10,6 +10,7 @@ namespace Classer
         private int årsModel;
         private string tillvärkare;
         private int vikt;
+        
 
         public void SetNamn(string n) { namn = n; }
 
