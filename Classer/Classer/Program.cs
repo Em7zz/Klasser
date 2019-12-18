@@ -5,6 +5,8 @@ namespace Classer
 {
     class Program
     {
+        private static bool item;
+
         public static void Main()
         {
             List<Fordon> fordonsLista = new List<Fordon>();
@@ -42,6 +44,18 @@ namespace Classer
 
         }
 
+        public static void Fordon(List<Fordon> lista)
+        {
+            foreach (var item in lista) ;
+            Console.WriteLine(item);
+        }
+
     }
 }
+
+
+
+
+    
+
 
