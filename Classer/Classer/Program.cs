@@ -5,7 +5,7 @@ namespace Classer
 {
     class Program
     {
-        private static bool item;
+
 
         public static void Main()
         {
@@ -13,41 +13,32 @@ namespace Classer
 
 
 
-            Fordon f = new Fordon();
-            f.SetNamn("Audi A6");
-            f.SetÅlder(2018);
-            f.SetTillvärkare("Volkswagen");
-            f.SetVikt(1760);
-            fordonsLista.Add(f);
-
-            Console.WriteLine(f.GetNamn());
-            Console.WriteLine(f.GetTillvärkare());
-            Console.WriteLine(f.GetÅlder());
-            Console.WriteLine(f.GetVikt());
+            Fordon f = new Fordon("R8", 2019, "Audi", 850 );
+            Console.WriteLine(f.Namn);
+            Console.WriteLine(f.ÅrsModel);
+            Console.WriteLine(f.Tillvärkare);
+            Console.WriteLine(f.Vikt);
 
             Console.WriteLine("   ");
+            
+                       
+            Fordon b = new Fordon("M5", 2019, "BMW", 750);
+            Console.WriteLine(b.Namn);
+            Console.WriteLine(b.ÅrsModel);
+            Console.WriteLine(b.Tillvärkare);
+            Console.WriteLine(b.Vikt);
 
-            Fordon t = new Fordon();
-            t.SetNamn("traktor");
-            t.SetÅlder(2019);
-            t.SetTillvärkare("traktor");
-            t.SetVikt(5000);
-            fordonsLista.Add(t);
-
-
-            Console.WriteLine(t.GetNamn());
-            Console.WriteLine(t.GetÅlder());
-            Console.WriteLine(t.GetTillvärkare());
-            Console.WriteLine(t.GetVikt());
+            
 
 
+           
 
-        }
 
-        public static void Fordon(List<Fordon> lista)
-        {
-            foreach (var item in lista) ;
-            Console.WriteLine(item);
+
+
+
+
+
         }
 
     }

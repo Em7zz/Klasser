@@ -12,20 +12,35 @@ namespace Classer
         private int vikt;
 
 
-        public void SetNamn(string n) { namn = n; }
+        public Fordon(string n, int å, string t, int v)
+        {
+            namn = n;
+            årsModel = å;
+            tillvärkare = t;
+            vikt = v;
+        }
 
-        public string GetNamn() { return namn; }
+        public string Namn
+        {
+            get { return namn; }
+            set { namn = value; }
+        }
+        public int ÅrsModel
+        {
+            get { return årsModel; }
+            set { årsModel = value; }
+        }
+        public string Tillvärkare
+        {
+            get { return tillvärkare; }
+            set { tillvärkare = value; }
+        }
+        public int Vikt
+        {
+            get { return vikt; }
+            set { vikt = value; }
+        }
 
-        public void SetÅlder(int å) { årsModel = å; }
-
-        public int GetÅlder() { return årsModel; }
-
-        public void SetTillvärkare(string t) { tillvärkare = t; }
-
-        public string GetTillvärkare() { return tillvärkare; }
-
-        public void SetVikt(int v) { vikt = v; }
-
-        public int GetVikt() { return vikt; }
+  
     }
 }
